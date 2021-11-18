@@ -1,0 +1,12 @@
+QFrame{
+    #border: 5px solid red;
+    #border-style: solid;
+    background:transparent;
+    color: rgba(0,0,0,100);
+}
+
+QLabel{
+    background-color: rgba(255, 0, 0, 0);
+    background:transparent;
+}
+

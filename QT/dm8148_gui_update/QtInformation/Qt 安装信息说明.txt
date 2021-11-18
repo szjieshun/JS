@@ -1,0 +1,10 @@
+1、QT 源码版本：
+{Qt Company Oy  V4.8.7}
+2、QT 源码获取路径：
+https://download.qt.io/archive/qt/4.7/
+3、QT 编译环境：
+arm-hisiv400-linux-gcc
+4、QT 编译脚本：
+参考 Qt编译脚本.txt
+5、QT 安装方法： 
+将QT 编译脚本中--prefix变量对应目录下的文件拷贝下载到要允许qt程序的板子上即可

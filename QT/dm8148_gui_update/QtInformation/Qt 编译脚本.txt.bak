@@ -1,0 +1,14 @@
+1,tar -zxvf qt-everywhere-opensource-src-4.8.7.tar.gz
+
+2,cd qt-everywhere-opensource-src-4.8.7/mkspecs/qws
+mkdir linux-arm-hisiv400-g++
+cp linux-arm-g++/* linux-arm-hisiv400-g++/
+gedit linux-arm-hisiv400-g++/qmake.conf "replace('arm-linux','arm-hisiv400-linux')"
+²¢Ìí¼Ó£º
+QMAKE_CFLAGS  += -march=armv7-a -D__ARM_ARCH_7A__
+QMAKE_CXXFLAGS  += -march=armv7-a -D__ARM_ARCH_7A__
+
+
+3, ./configure -xplatform qws/linux-arm-hisiv400-g++ --prefix=/opt/qt-embedded-hisi3536 -opensource -confirm-license -release -shared -embedded arm -depths all -fast -optimized-qmake -pch -qt-sql-sqlite -qt-libjpeg -qt-zlib -qt-libpng -qt-freetype -little-endian -host-little-endian -script -no-qt3support -no-libtiff -no-libmng -no-opengl -no-mmx -no-sse -no-sse2 -no-3dnow -no-openssl -no-webkit -no-qvfb -no-phonon -no-nis -no-opengl -no-cups -no-glib -no-xcursor -no-xfixes -no-xrandr -no-xrender -no-separate-debug-info -nomake examples -nomake tools -nomake docs -no-mouse-tslib -feature-CURSOR -no-armfpa
+
+4, make;make install

@@ -1,0 +1,19 @@
+prefix=/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/arm-qt4
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtGui
+qt_config=lex yacc warn_on uic resources qt warn_on release incremental link_prl def_files_disabled no_mocdepend release stl qt_no_framework cross_compile release shared dll embedded stl exceptions_off dylib create_prl link_prl depend_includepath QTDIR_build qt_install_headers qt warn_on depend_includepath qmake_cache target_qt hide_symbols create_libtool create_pc explicitlib opentype moc thread shared dll
+moc_location=/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/bin/moc
+uic_location=/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/bin/uic
+rcc_location=/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/bin/rcc
+lupdate_location=/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/bin/lupdate
+lrelease_location=/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/bin/lrelease
+
+Name: Qtgui
+Description: Qtgui Library
+Version: 4.7.1
+Libs: -L${libdir} -lQtGui 
+Libs.private: -L/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/arm-qt4/lib  -lQtNetwork -L/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/arm-qt4/lib -lQtCore -lpthread   
+Cflags: -DQT_SHARED -I/home/qgc/samba/qt_yuanma/qt-everywhere-opensource-src-4.7.1/arm-qt4/arm-qt4/include -I${includedir}
+Requires: QtCore
+
